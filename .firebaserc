@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "corona-fact-checker"
+  },
+  "targets": {
+    "corona-fact-checker": {
+      "hosting": {
+        "covid-fact-checker": [
+          "corona-fact-checker"
+        ]
+      }
+    }
   }
 }
