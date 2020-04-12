@@ -3,7 +3,6 @@ import * as admin from 'firebase-admin';
 import * as crypto from 'crypto';
 import * as twillio from 'twilio';
 import { Claim } from './models/claim';
-import { FactCheck } from './models/factCheck';
 
 const config = functions.config();
 const firestore = admin.firestore();
@@ -19,24 +18,27 @@ export const onMessageReceived = functions.https.onRequest(async (request, respo
     const receivedMsg = (request.body.Body as string).trim();
 
     const claimId = crypto.createHash('sha256').update(receivedMsg.toLowerCase().replace(/ /g, '')).digest('hex');
-    const factQuery = await firestore.collection('fact-checks').where('claims', 'array-contains', claimId).limit(1).get();
+    const claimDoc = await firestore.doc(`claims/${claimId}`).get();
 
-    if (!factQuery.empty) {
-        const factCheck = factQuery.docs[0].data() as FactCheck;
+    if (claimDoc.exists) {
+        const claim = claimDoc.data() as Claim;
 
         await firestore.doc(`claims/${claimId}`).update({
             hitCount: admin.firestore.FieldValue.increment(1),
         });
 
-        twiml.message(`Here's what I found on this claim:${factCheck.links.map((l) => '\n' + l)}`);
+        if (claim.factCheckerLinks.length)
+            twiml.message(`Here's what I found regarding this claim:${claim.factCheckerLinks.map((l) => '\n' + l)}`);
+        else
+            twiml.message(`I have not fact checked this claim yet. Please check back later.`);
     } else {
         await firestore.doc(`claims/${claimId}`).create({
             content: receivedMsg,
             hitCount: 1,
-            checked: false
+            factCheckerLinks: [],
         } as Claim);
 
-        twiml.message(`I have never seen this claim before, but I have logged it for checking.`);
+        twiml.message(`I have never seen this claim before, but I have logged it for fact checking.`);
     }
 
     response.writeHead(200, { 'Content-Type': 'text/xml' });
