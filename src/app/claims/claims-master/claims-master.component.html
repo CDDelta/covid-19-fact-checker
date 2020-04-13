@@ -1,6 +1,7 @@
 <mat-form-field>
-    <mat-select value="unchecked" (valueChange)="checkedFilter$.next($event)">
-        <mat-option value="">All</mat-option>
+    <mat-label>Status</mat-label>
+    <mat-select value="{{statusFilter$.value}}" (valueChange)="statusFilter$.next($event)">
+        <mat-option value="all">All</mat-option>
         <mat-option value="checked">Checked</mat-option>
         <mat-option value="unchecked">Not Checked</mat-option>
     </mat-select>
@@ -23,7 +24,5 @@
 </ng-container>
 
 <ng-template #loading>
-    <div class="text-center">
-        <mat-spinner class="text-center"></mat-spinner>
-    </div>
+    <app-page-spinner></app-page-spinner>
 </ng-template>

@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class ClaimsComponent implements OnInit {
 
-  constructor(private auth: AngularFireAuth, private router: Router) { }
+  constructor(public auth: AngularFireAuth, private router: Router) { }
 
   ngOnInit(): void {
   }

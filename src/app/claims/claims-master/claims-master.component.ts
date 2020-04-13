@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { Claim } from '../../models/claim';
 import { BehaviorSubject, combineLatest } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 
-enum CheckFilterState { All = '', Checked = 'checked', Unchecked = 'unchecked' }
+enum ClaimStatusFilter { All = 'all', Checked = 'checked', Unchecked = 'unchecked' }
 
 @Component({
   selector: 'app-claims-master',
@@ -13,19 +14,36 @@ enum CheckFilterState { All = '', Checked = 'checked', Unchecked = 'unchecked' }
   styleUrls: ['./claims-master.component.scss']
 })
 export class ClaimsMasterComponent implements OnInit {
-
-  public checkedFilter$ = new BehaviorSubject<CheckFilterState>(CheckFilterState.Unchecked);
+  public statusFilter$: BehaviorSubject<ClaimStatusFilter>;
 
   public claims$: Observable<Claim[]>;
 
-  constructor(private db: AngularFirestore) { }
+  constructor(private db: AngularFirestore, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.statusFilter$ = new BehaviorSubject<ClaimStatusFilter>(this.route.snapshot.queryParams.status);
+
+    combineLatest(this.statusFilter$).subscribe(([status]) => this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: {
+        status,
+      }
+    }));
+
     this.claims$ =
-      combineLatest(this.checkedFilter$)
+      this.route.queryParams
         .pipe(
           switchMap(
-            () => this.db.collection('claims', (ref) => ref.orderBy('hitCount', 'desc'))
+            ({ status }) => this.db.collection('claims', (ref) => {
+              let query = ref.orderBy('hitCount', 'desc');
+
+              if (status === ClaimStatusFilter.Checked)
+                query = ref.where('checked', '==', true);
+              else if (status === ClaimStatusFilter.Unchecked)
+                query = ref.where('checked', '==', false);
+
+              return query;
+            })
               .valueChanges({ idField: 'id' }) as Observable<Claim[]>
           )
         );

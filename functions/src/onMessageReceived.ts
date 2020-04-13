@@ -35,8 +35,10 @@ export const onMessageReceived = functions.https.onRequest(async (request, respo
         await firestore.doc(`claims/${claimId}`).create({
             content: receivedMsg,
             hitCount: 1,
+            checked: false,
             factCheckerLinks: [],
-        } as Claim);
+            dateAdded: admin.firestore.FieldValue.serverTimestamp(),
+        } as Omit<Claim, 'dateAdded'>);
 
         twiml.message(`I have never seen this claim before, but I have logged it for fact checking.`);
     }

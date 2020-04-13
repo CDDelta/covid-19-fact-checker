@@ -1,9 +1,14 @@
 <mat-toolbar class="mat-elevation-z6" color="primary">
     <a>Claims</a>
     <span class="toolbar-spanner"></span>
-    <button (click)="signOut()" mat-icon-button>
+    <button *ngIf="auth.user | async as user; else signIn" (click)="signOut()" mat-icon-button>
         <mat-icon>exit_to_app</mat-icon>
     </button>
+    <ng-template #signIn>
+        <a routerLink="/account/sign-in" mat-icon-button>
+            <mat-icon>account_circle</mat-icon>
+        </a>
+    </ng-template>
 </mat-toolbar>
 
 <div class="page-content">

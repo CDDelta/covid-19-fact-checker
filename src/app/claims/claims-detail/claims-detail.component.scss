@@ -1,4 +1,20 @@
+@import '~@angular/material/theming';
+
 :host {
   display: block;
   padding: 0.75rem;
+}
+
+.return-btn {
+  margin-bottom: 0.75rem;
+}
+
+.claim-wrapper {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 2fr 1fr;
+
+  @media ($mat-xsmall), ($mat-small) {
+    grid-template-columns: 1fr;
+  }
 }

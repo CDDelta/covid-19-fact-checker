@@ -15,6 +15,7 @@ const claimExamples = [
         Please forward to your friends and let them know!
         `,
         hitCount: 1,
+        checked: false,
         factCheckerLinks: [],
     },
     {
@@ -24,6 +25,7 @@ const claimExamples = [
         Please forward to your friends and let them know!
         `,
         hitCount: 27,
+        checked: true,
         factCheckerLinks: [
             'https://example.com/not-true',
         ],
@@ -34,7 +36,10 @@ const batch = firestore.batch();
 
 for (let claim of claimExamples) {
     const claimId = crypto.createHash('sha256').update(claim.content.toLowerCase().replace(/ /g, '')).digest('hex');;
-    batch.set(firestore.doc(`claims/${claimId}`), claim);
+    batch.set(firestore.doc(`claims/${claimId}`), {
+        dateAdded: admin.firestore.FieldValue.serverTimestamp(),
+        ...claim,
+    });
 }
 
 batch.commit();

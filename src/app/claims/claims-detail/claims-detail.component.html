@@ -1,9 +1,20 @@
-<mat-card *ngIf="claim$ | async as claim; else loading">
-    <mat-card-content>
-        <p>{{claim.content}}</p>
-    </mat-card-content>
-</mat-card>
+<a class="return-btn" routerLink="/claims" mat-stroked-button>
+    <mat-icon>arrow_back</mat-icon>
+    <span>Return to Claims</span>
+</a>
+
+<div *ngIf="claim$ | async as claim; else loading" class="claim-wrapper">
+    <mat-card>
+        <mat-card-content>
+            <p>{{claim.content}}</p>
+        </mat-card-content>
+    </mat-card>
+    <mat-card>
+        <p>Date Added: {{claim.dateAdded.toDate() | date}}</p>
+        <p>Hits: {{claim.hitCount}}</p>
+    </mat-card>
+</div>
 
 <ng-template #loading>
-    <mat-spinner class="text-center"></mat-spinner>
+    <app-page-spinner></app-page-spinner>
 </ng-template>
