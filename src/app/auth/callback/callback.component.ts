@@ -23,6 +23,6 @@ export class CallbackComponent implements OnInit {
     if (isSignInLink && email)
       await this.auth.signInWithEmailLink(email, this.location.href);
 
-    this.router.navigate(['']);
+    this.router.navigateByUrl('');
   }
 }
