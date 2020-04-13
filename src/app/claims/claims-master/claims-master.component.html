@@ -23,16 +23,21 @@
 </div>
 
 <ng-container *ngIf="claims$ | async as claims; else loading">
-    <div *ngIf="claims.length > 0; else placeholder" class="claims-grid">
-        <mat-card *ngFor="let claim of claims">
-            <mat-card-content>
-                <p>{{claim.content}}</p>
-            </mat-card-content>
-            <mat-card-actions>
-                <a routerLink="/claims/{{claim.id}}" mat-button>Review</a>
-            </mat-card-actions>
-        </mat-card>
-    </div>
+    <ng-container *ngIf="claims.length > 0; else placeholder">
+        <div class="claims-grid">
+            <mat-card *ngFor="let claim of claims">
+                <mat-card-content>
+                    <p>{{claim.content}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <a routerLink="/claims/{{claim.id}}" mat-button>Review</a>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div class="text-center">
+            <button class="load-btn" mat-stroked-button>Load More</button>
+        </div>
+    </ng-container>
     <ng-template #placeholder>
         <h3 class="text-center">There's nothing to see here.</h3>
     </ng-template>
