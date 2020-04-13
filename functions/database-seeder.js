@@ -16,7 +16,6 @@ const claimExamples = [
         `,
         hitCount: 1,
         hitCountryCodes: ['AU'],
-        checked: false,
         truthfulness: 'mostly_true',
         factCheckerLinks: [],
     },
@@ -28,7 +27,6 @@ const claimExamples = [
         `,
         hitCount: 27,
         hitCountryCodes: ['US'],
-        checked: true,
         truthfulness: 'false',
         factCheckerLinks: [
             'https://example.com/not-true',

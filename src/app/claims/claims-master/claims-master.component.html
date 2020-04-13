@@ -1,17 +1,9 @@
 <div class="filter-row">
     <mat-form-field>
-        <mat-label>Status</mat-label>
-        <mat-select value="{{statusFilter$.value}}" (valueChange)="statusFilter$.next($event)">
-            <mat-option value="">All</mat-option>
-            <mat-option value="checked">Checked</mat-option>
-            <mat-option value="unchecked">Not Checked</mat-option>
-        </mat-select>
-    </mat-form-field>
-
-    <mat-form-field>
         <mat-label>Truthfulness</mat-label>
         <mat-select value="{{truthfulnessFilter$.value}}" (valueChange)="truthfulnessFilter$.next($event)">
             <mat-option value="">Any</mat-option>
+            <mat-option value="unverified">{{'unverified' | truthfulness}}</mat-option>
             <mat-option value="false">{{'false' | truthfulness}}</mat-option>
             <mat-option value="mostly_false">{{'mostly_false' | truthfulness}}</mat-option>
             <mat-option value="half_true">{{'half_true' | truthfulness}}</mat-option>

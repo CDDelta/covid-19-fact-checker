@@ -12,7 +12,7 @@
     margin-right: 0.75rem;
   }
 
-  @media ($mat-small), ($mat-xsmall) {
+  @media ($mat-xsmall) {
     flex-direction: column;
 
     .mat-form-field {

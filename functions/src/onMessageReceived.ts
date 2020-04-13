@@ -2,7 +2,7 @@ import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import * as crypto from 'crypto';
 import * as twillio from 'twilio';
-import { Claim } from './models/claim';
+import { Claim, Truthfulness } from './models/claim';
 
 const config = functions.config();
 const firestore = admin.firestore();
@@ -35,7 +35,8 @@ export const onMessageReceived = functions.https.onRequest(async (request, respo
         await firestore.doc(`claims/${claimId}`).create({
             content: receivedMsg,
             hitCount: 1,
-            checked: false,
+            truthfulness: Truthfulness.Unverified,
+            hitCountryCodes: [],
             factCheckerLinks: [],
             dateAdded: admin.firestore.FieldValue.serverTimestamp(),
         } as Omit<Claim, 'dateAdded'>);

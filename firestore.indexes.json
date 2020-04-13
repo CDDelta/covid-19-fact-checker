@@ -1,4 +1,51 @@
 {
-  "indexes": [],
+  "indexes": [
+    {
+      "collectionGroup": "claims",       
+      "queryScope": "COLLECTION",        
+      "fields": [
+        {
+          "fieldPath": "hitCountryCodes",
+          "arrayConfig": "CONTAINS"      
+        },
+        {
+          "fieldPath": "hitCount",       
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "claims",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "hitCountryCodes",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "truthfulness",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hitCount",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "claims",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "truthfulness",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "hitCount",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
   "fieldOverrides": []
 }

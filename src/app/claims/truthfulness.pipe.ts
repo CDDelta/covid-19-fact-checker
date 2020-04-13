@@ -8,6 +8,8 @@ export class TruthfulnessPipe implements PipeTransform {
 
   transform(value: string, ...args: unknown[]): string {
     switch (value) {
+      case 'unverified':
+        return 'Unverified';
       case 'false':
         return 'False';
       case 'mostly_false':

@@ -11,7 +11,7 @@
     </mat-card>
     <mat-card>
         <p>Date Added: {{claim.dateAdded.toDate() | date}}</p>
-        <p>Truthfulness: {{claim.truthfulness}}</p>
+        <p>Truthfulness: {{claim.truthfulness | truthfulness}}</p>
         <p>Hits: {{claim.hitCount}}</p>
     </mat-card>
 </div>
