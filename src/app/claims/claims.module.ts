@@ -4,10 +4,11 @@ import { ClaimsRoutingModule } from './claims-routing.module';
 import { ClaimsMasterComponent } from './claims-master/claims-master.component';
 import { ClaimsDetailComponent } from './claims-detail/claims-detail.component';
 import { ClaimsComponent } from './claims.component';
+import { TruthfulnessPipe } from './truthfulness.pipe';
 
 
 @NgModule({
-  declarations: [ClaimsMasterComponent, ClaimsDetailComponent, ClaimsComponent],
+  declarations: [ClaimsMasterComponent, ClaimsDetailComponent, ClaimsComponent, TruthfulnessPipe],
   imports: [
     SharedModule,
     ClaimsRoutingModule

@@ -15,7 +15,9 @@ const claimExamples = [
         Please forward to your friends and let them know!
         `,
         hitCount: 1,
+        hitCountryCodes: ['AU'],
         checked: false,
+        truthfulness: 'mostly_true',
         factCheckerLinks: [],
     },
     {
@@ -25,7 +27,9 @@ const claimExamples = [
         Please forward to your friends and let them know!
         `,
         hitCount: 27,
+        hitCountryCodes: ['US'],
         checked: true,
+        truthfulness: 'false',
         factCheckerLinks: [
             'https://example.com/not-true',
         ],

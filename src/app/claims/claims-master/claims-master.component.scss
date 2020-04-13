@@ -5,6 +5,22 @@
   padding: 0.75rem;
 }
 
+.filter-row {
+  display: flex;
+
+  .mat-form-field {
+    margin-right: 0.75rem;
+  }
+
+  @media ($mat-small), ($mat-xsmall) {
+    flex-direction: column;
+
+    .mat-form-field {
+      margin-right: 0;
+    }
+  }
+}
+
 .claims-grid {
   display: grid;
 
