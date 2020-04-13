@@ -2,10 +2,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'truthfulness',
-  pure: true
+  pure: true,
 })
 export class TruthfulnessPipe implements PipeTransform {
-
   transform(value: string, ...args: unknown[]): string {
     switch (value) {
       case 'unverified':
@@ -24,5 +23,4 @@ export class TruthfulnessPipe implements PipeTransform {
         return 'Unknown';
     }
   }
-
 }

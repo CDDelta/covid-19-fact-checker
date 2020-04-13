@@ -16,13 +16,13 @@ const routes: Routes = [
       {
         path: ':id',
         component: ClaimsDetailComponent,
-      }
-    ]
+      },
+    ],
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class ClaimsRoutingModule { }
+export class ClaimsRoutingModule {}

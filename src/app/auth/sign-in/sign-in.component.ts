@@ -4,12 +4,16 @@ import { AngularFireAuth } from '@angular/fire/auth';
 import { MatInput } from '@angular/material/input';
 import { FormBuilder, Validators } from '@angular/forms';
 
-enum SignInState { Waiting = 'waiting', SendingEmail = 'sending_email', SentEmail = 'sent_email' };
+enum SignInState {
+  Waiting = 'waiting',
+  SendingEmail = 'sending_email',
+  SentEmail = 'sent_email',
+}
 
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
-  styleUrls: ['./sign-in.component.scss']
+  styleUrls: ['./sign-in.component.scss'],
 })
 export class SignInComponent {
   public form = this.fb.group({
@@ -18,11 +22,14 @@ export class SignInComponent {
 
   public state = SignInState.Waiting;
 
-  constructor(private auth: AngularFireAuth, private location: PlatformLocation, private fb: FormBuilder) { }
+  constructor(
+    private auth: AngularFireAuth,
+    private location: PlatformLocation,
+    private fb: FormBuilder,
+  ) {}
 
   async sendSignInEmail(): Promise<void> {
-    if (this.form.invalid)
-      return;
+    if (this.form.invalid) return;
 
     this.state = SignInState.SendingEmail;
 

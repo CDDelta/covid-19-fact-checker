@@ -26,6 +26,6 @@ import { PageSpinnerModule } from './page-spinner/page-spinner.module';
     MatInputModule,
     MatProgressSpinnerModule,
     PageSpinnerModule,
-  ]
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}

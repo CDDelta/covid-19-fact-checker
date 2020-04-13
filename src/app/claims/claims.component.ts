@@ -5,14 +5,12 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-claims',
   templateUrl: './claims.component.html',
-  styleUrls: ['./claims.component.scss']
+  styleUrls: ['./claims.component.scss'],
 })
 export class ClaimsComponent implements OnInit {
+  constructor(public auth: AngularFireAuth, private router: Router) {}
 
-  constructor(public auth: AngularFireAuth, private router: Router) { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   async signOut(): Promise<void> {
     await this.auth.signOut();

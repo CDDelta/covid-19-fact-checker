@@ -28,16 +28,17 @@ const claimExamples = [
         hitCount: 27,
         hitCountryCodes: ['US'],
         truthfulness: 'false',
-        factCheckerLinks: [
-            'https://example.com/not-true',
-        ],
+        factCheckerLinks: ['https://example.com/not-true'],
     },
 ];
 
 const batch = firestore.batch();
 
 for (let claim of claimExamples) {
-    const claimId = crypto.createHash('sha256').update(claim.content.toLowerCase().replace(/ /g, '')).digest('hex');;
+    const claimId = crypto
+        .createHash('sha256')
+        .update(claim.content.toLowerCase().replace(/ /g, ''))
+        .digest('hex');
     batch.set(firestore.doc(`claims/${claimId}`), {
         dateAdded: admin.firestore.FieldValue.serverTimestamp(),
         ...claim,

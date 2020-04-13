@@ -5,10 +5,7 @@ import { PageSpinnerComponent } from './page-spinner.component';
 
 @NgModule({
   declarations: [PageSpinnerComponent],
-  imports: [
-    CommonModule,
-    MatProgressSpinnerModule,
-  ],
+  imports: [CommonModule, MatProgressSpinnerModule],
   exports: [PageSpinnerComponent],
 })
-export class PageSpinnerModule { }
+export class PageSpinnerModule {}

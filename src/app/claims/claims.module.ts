@@ -7,12 +7,14 @@ import { ClaimsComponent } from './claims.component';
 import { TruthfulnessPipe } from './truthfulness.pipe';
 import { ClaimsEditComponent } from './claims-edit/claims-edit.component';
 
-
 @NgModule({
-  declarations: [ClaimsMasterComponent, ClaimsDetailComponent, ClaimsComponent, TruthfulnessPipe, ClaimsEditComponent],
-  imports: [
-    SharedModule,
-    ClaimsRoutingModule
-  ]
+  declarations: [
+    ClaimsMasterComponent,
+    ClaimsDetailComponent,
+    ClaimsComponent,
+    TruthfulnessPipe,
+    ClaimsEditComponent,
+  ],
+  imports: [SharedModule, ClaimsRoutingModule],
 })
-export class ClaimsModule { }
+export class ClaimsModule {}

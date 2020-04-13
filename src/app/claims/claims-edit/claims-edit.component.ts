@@ -6,16 +6,18 @@ import { FormBuilder } from '@angular/forms';
 @Component({
   selector: 'app-claims-edit',
   templateUrl: './claims-edit.component.html',
-  styleUrls: ['./claims-edit.component.scss']
+  styleUrls: ['./claims-edit.component.scss'],
 })
 export class ClaimsEditComponent implements OnInit {
   public form = this.fb.group({
     truthfulness: [this.dialogData.truthfulness],
   });
 
-  constructor(private fb: FormBuilder, private dialogRef: MatDialogRef<ClaimsEditComponent>, @Inject(MAT_DIALOG_DATA) private dialogData: Claim) { }
+  constructor(
+    private fb: FormBuilder,
+    private dialogRef: MatDialogRef<ClaimsEditComponent>,
+    @Inject(MAT_DIALOG_DATA) private dialogData: Claim,
+  ) {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

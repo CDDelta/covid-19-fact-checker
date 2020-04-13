@@ -10,9 +10,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -26,9 +24,9 @@ import { environment } from '../environments/environment';
       provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
       useValue: {
         appearance: 'outline',
-      }
-    }
+      },
+    },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

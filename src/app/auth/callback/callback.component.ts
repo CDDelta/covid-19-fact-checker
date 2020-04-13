@@ -6,18 +6,23 @@ import { PlatformLocation } from '@angular/common';
 @Component({
   selector: 'app-callback',
   templateUrl: './callback.component.html',
-  styleUrls: ['./callback.component.scss']
+  styleUrls: ['./callback.component.scss'],
 })
 export class CallbackComponent implements OnInit {
-
-  constructor(private auth: AngularFireAuth, private location: PlatformLocation, private router: Router) { }
+  constructor(
+    private auth: AngularFireAuth,
+    private location: PlatformLocation,
+    private router: Router,
+  ) {}
 
   ngOnInit(): void {
     this.attemptSignInWithEmailLink();
   }
 
   async attemptSignInWithEmailLink(): Promise<void> {
-    const isSignInLink = await this.auth.isSignInWithEmailLink(this.location.href);
+    const isSignInLink = await this.auth.isSignInWithEmailLink(
+      this.location.href,
+    );
     const email = localStorage.getItem('signInEmail');
 
     if (isSignInLink && email)
