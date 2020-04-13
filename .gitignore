@@ -2,6 +2,7 @@
 firebase-debug.log*
 
 .firebase/
+firebase-cert.json
 
 # compiled output
 /dist
