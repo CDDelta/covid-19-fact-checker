@@ -21,6 +21,9 @@ export class SignInComponent {
   constructor(private auth: AngularFireAuth, private location: PlatformLocation, private fb: FormBuilder) { }
 
   async sendSignInEmail(): Promise<void> {
+    if (this.form.invalid)
+      return;
+
     this.state = SignInState.SendingEmail;
 
     try {
