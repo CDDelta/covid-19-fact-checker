@@ -10,6 +10,9 @@
         </mat-card-content>
     </mat-card>
     <mat-card>
+        <button *ngIf="auth.user | async" class="edit-btn" color="primary" (click)="openEditDialog()" mat-fab>
+            <mat-icon>edit</mat-icon>
+        </button>
         <p>Date Added: {{claim.dateAdded.toDate() | date}}</p>
         <p>Truthfulness: {{claim.truthfulness | truthfulness}}</p>
         <p>Hits: {{claim.hitCount}}</p>
