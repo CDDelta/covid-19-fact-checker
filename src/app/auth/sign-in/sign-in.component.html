@@ -1,0 +1,16 @@
+<mat-card [ngSwitch]="state">
+    <ng-container *ngIf="state === 'waiting' || state === 'sending_email'">
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input required matInput #emailInput>
+        </mat-form-field>
+        <button (click)="sendSignInEmail()" color="primary" mat-raised-button>Sign in with Email</button>
+    </ng-container>
+    <div class="loading-shade" *ngSwitchCase="'sending_email'">
+        <mat-spinner diameter="50"></mat-spinner>
+    </div>
+    <ng-container *ngSwitchCase="'sent_email'">
+        <h1>Email sent!</h1>
+        <p>Check your email for the link to sign in.</p>
+    </ng-container>
+</mat-card>
