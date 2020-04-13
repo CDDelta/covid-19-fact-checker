@@ -1,11 +1,14 @@
 <mat-card [ngSwitch]="state">
-    <ng-container *ngIf="state === 'waiting' || state === 'sending_email'">
+    <form *ngIf="state === 'waiting' || state === 'sending_email'" [formGroup]="form" (ngSubmit)="sendSignInEmail()">
         <mat-form-field>
             <mat-label>Email</mat-label>
-            <input required matInput #emailInput>
+            <input formControlName="email" type="email" autocomplete="email" required matInput>
+            <mat-error *ngIf="form.hasError('required', 'email') || form.hasError('email', 'email')">
+                Please enter a valid email.
+            </mat-error>
         </mat-form-field>
-        <button (click)="sendSignInEmail()" color="primary" mat-raised-button>Sign in with Email</button>
-    </ng-container>
+        <button color="primary" mat-raised-button>Sign in with Email</button>
+    </form>
     <div class="loading-shade" *ngSwitchCase="'sending_email'">
         <mat-spinner diameter="50"></mat-spinner>
     </div>
