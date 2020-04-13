@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
+import { Claim } from '../../models/claim';
 
 @Component({
   selector: 'app-claims-detail',
@@ -7,9 +12,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClaimsDetailComponent implements OnInit {
 
-  constructor() { }
+  public claim$: Observable<Claim>;
+
+  constructor(private db: AngularFirestore, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.claim$ = this.route.params.pipe(switchMap((params) => this.db.doc(`/claims/${params.id}`).valueChanges())) as Observable<Claim>;
   }
 
 }

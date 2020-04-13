@@ -1,1 +1,29 @@
-<p>claims-master works!</p>
+<mat-form-field>
+    <mat-select value="unchecked" (valueChange)="checkedFilter$.next($event)">
+        <mat-option value="">All</mat-option>
+        <mat-option value="checked">Checked</mat-option>
+        <mat-option value="unchecked">Not Checked</mat-option>
+    </mat-select>
+</mat-form-field>
+
+<ng-container *ngIf="claims$ | async as claims; else loading">
+    <div *ngIf="claims.length > 0; else placeholder" class="claims-grid">
+        <mat-card *ngFor="let claim of claims">
+            <mat-card-content>
+                <p>{{claim.content}}</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <a routerLink="/claims/{{claim.id}}" mat-button>Review</a>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+    <ng-template #placeholder>
+        <h3 class="text-center">There's nothing to see here.</h3>
+    </ng-template>
+</ng-container>
+
+<ng-template #loading>
+    <div class="text-center">
+        <mat-spinner class="text-center"></mat-spinner>
+    </div>
+</ng-template>

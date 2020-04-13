@@ -1,9 +1,11 @@
-<mat-toolbar color="primary">
-    <span>Claims</span>
+<mat-toolbar class="mat-elevation-z6" color="primary">
+    <a>Claims</a>
     <span class="toolbar-spanner"></span>
     <button (click)="signOut()" mat-icon-button>
         <mat-icon>exit_to_app</mat-icon>
     </button>
 </mat-toolbar>
 
-<router-outlet></router-outlet>
+<div class="page-content">
+    <router-outlet></router-outlet>
+</div>

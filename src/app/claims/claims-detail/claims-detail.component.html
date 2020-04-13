@@ -1,1 +1,9 @@
-<p>claims-detail works</p>
+<mat-card *ngIf="claim$ | async as claim; else loading">
+    <mat-card-content>
+        <p>{{claim.content}}</p>
+    </mat-card-content>
+</mat-card>
+
+<ng-template #loading>
+    <mat-spinner class="text-center"></mat-spinner>
+</ng-template>
