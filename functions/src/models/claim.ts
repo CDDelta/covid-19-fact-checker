@@ -1,4 +1,4 @@
-import * as admin from 'firebase-admin';
+import { firestore } from 'firebase-admin';
 
 export enum Truthfulness {
   Unverified = 'unverified',
@@ -15,5 +15,5 @@ export interface Claim {
   hitCountryCodes: string[];
   truthfulness: Truthfulness;
   factCheckerLinks: string[];
-  dateAdded: admin.firestore.Timestamp;
+  dateAdded: firestore.Timestamp;
 }
