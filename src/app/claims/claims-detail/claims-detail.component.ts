@@ -51,6 +51,7 @@ export class ClaimsDetailComponent implements OnInit {
             .collection(`/claims/${params.id}/daily_aggregated_hits`, (ref) =>
               ref
                 .where('date', '>=', this.getStartOfPastDay(7))
+                .where('date', '<=', firestore.Timestamp.fromDate(new Date()))
                 .orderBy('date')
                 .limit(7),
             )
@@ -63,7 +64,7 @@ export class ClaimsDetailComponent implements OnInit {
         {
           name: 'Hits',
           series: buckets.map((b) => ({
-            name: b.date.toDate().toUTCString(),
+            name: b.date.toDate().toLocaleDateString(),
             value: Object.keys(b.countryCodes).reduce(
               (sum, countryCode) => sum + b.countryCodes[countryCode],
               0,
