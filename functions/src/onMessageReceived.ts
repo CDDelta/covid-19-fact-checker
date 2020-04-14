@@ -36,7 +36,7 @@ export const onMessageReceived = functions.https.onRequest(
 
     const claimId = crypto
       .createHash('sha256')
-      .update(receivedMsg.toLowerCase().replace(/ /g, ''))
+      .update(receivedMsg.toLowerCase().replace(/\W/g, ''))
       .digest('hex');
     const claimDoc = await firestore.doc(`claims/${claimId}`).get();
 

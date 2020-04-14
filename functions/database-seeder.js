@@ -37,7 +37,7 @@ const batch = firestore.batch();
 for (let claim of claimExamples) {
     const claimId = crypto
         .createHash('sha256')
-        .update(claim.content.toLowerCase().replace(/ /g, ''))
+        .update(claim.content.toLowerCase().replace(/\W/g, ''))
         .digest('hex');
     batch.set(firestore.doc(`claims/${claimId}`), {
         dateAdded: admin.firestore.FieldValue.serverTimestamp(),
