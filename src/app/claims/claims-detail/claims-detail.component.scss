@@ -12,11 +12,7 @@
 .claim-wrapper {
   display: grid;
   gap: 12px;
-  grid-template-columns: 2fr 1fr;
-
-  @media ($mat-small) {
-    grid-template-columns: 1fr 1fr;
-  }
+  grid-template-columns: 1fr 1fr;
 
   @media ($mat-xsmall) {
     grid-template-columns: 1fr;
@@ -36,13 +32,17 @@
   right: 10px;
 }
 
-.charts-container {
+.chart-container {
   width: 100%;
   max-width: 100%;
+  min-height: 300px;
+
+  fill: #fff;
 
   > * {
     display: block;
     width: 100%;
     max-width: 100%;
+    height: 300px;
   }
 }

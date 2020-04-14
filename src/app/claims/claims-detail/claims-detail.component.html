@@ -24,13 +24,16 @@
                 </li>
             </ul>
         </ng-container>
-        <div class="charts-container">
+        <div class="chart-container">
             <ngx-charts-line-chart *ngIf="pastWeekHitsData$ | async as pastWeekHitsData" [results]="pastWeekHitsData"
                 xAxisLabel="Date" yAxisLabel="Hit Count" xAxis="true" yAxis="true" showXAxisLabel="true"
                 showYAxisLabel="true">
             </ngx-charts-line-chart>
-            <ngx-charts-bar-vertical *ngIf="countryHitsData$ | async as countryHitsData" [results]="countryHitsData">
-
+        </div>
+        <div class="chart-container">
+            <ngx-charts-bar-vertical *ngIf="countryHitsData$ | async as countryHitsData" [results]="countryHitsData"
+                xAxisLabel="Country" yAxisLabel="Hit Count" xAxis="true" yAxis="true" showXAxisLabel="true"
+                showYAxisLabel="true">
             </ngx-charts-bar-vertical>
         </div>
     </mat-card>
