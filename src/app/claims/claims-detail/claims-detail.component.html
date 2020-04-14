@@ -6,7 +6,7 @@
 <div *ngIf="claim$ | async as claim; else loading" class="claim-wrapper">
     <mat-card class="claim-content">
         <mat-card-content>
-            <p>{{claim.content}}</p>
+            <p [innerHTML]="claim.content"></p>
         </mat-card-content>
     </mat-card>
     <mat-card class="claim-details">

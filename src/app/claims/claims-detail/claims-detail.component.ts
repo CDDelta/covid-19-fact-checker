@@ -34,7 +34,12 @@ export class ClaimsDetailComponent implements OnInit {
           this.db
             .doc(`/claims/${params.id}`)
             .valueChanges()
-            .pipe(tap((c: Claim) => (c.id = params.id))),
+            .pipe(
+              tap((c: Claim) => {
+                c.id = params.id;
+                c.content = c.content.replace(/\n/g, '<br>');
+              }),
+            ),
         ),
       )
       .subscribe(this.claim$);
@@ -73,7 +78,8 @@ export class ClaimsDetailComponent implements OnInit {
         const countrySumMap = {};
         for (const bucket of buckets)
           for (const country in bucket.countryCodes)
-            countrySumMap[country] = (countrySumMap[country] ?? 0) + bucket.countryCodes[country];
+            countrySumMap[country] =
+              (countrySumMap[country] ?? 0) + bucket.countryCodes[country];
 
         const countrySums = [];
         for (const country in countrySumMap)
