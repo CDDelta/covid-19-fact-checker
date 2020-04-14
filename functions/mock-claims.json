@@ -1,0 +1,34 @@
+[
+  {
+    "content": "Did you know that this thing did this?\n\nPlease forward to your friends and let them know!",
+    "hitCount": 212,
+    "hitCountryCodes": [
+      "AU"
+    ],
+    "truthfulness": "mostly_true",
+    "factCheckerLinks": []
+  },
+  {
+    "content": "I have a friend in the CIA who told me that aliens are visiting.\n\nPlease forward to your friends and let them know!",
+    "hitCount": 27,
+    "hitCountryCodes": [
+      "US"
+    ],
+    "truthfulness": "false",
+    "factCheckerLinks": [
+      "https://example.com/not-true"
+    ]
+  },
+  {
+    "content": "If you can hold your breath for over 10 minutes that means you are immortal. My doctor friend told me so.\n\nPlease forward to your friends and let them know!",
+    "hitCount": 123,
+    "hitCountryCodes": [
+      "US",
+      "BE"
+    ],
+    "truthfulness": "false",
+    "factCheckerLinks": [
+      "https://example.com/not-true"
+    ]
+  }
+]

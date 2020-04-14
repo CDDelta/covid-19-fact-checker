@@ -27,7 +27,7 @@
         <div class="claims-grid">
             <mat-card *ngFor="let claim of query.claims" class="claim-card">
                 <mat-card-content>
-                    <p>{{claim.content}}</p>
+                    <p [innerHTML]="claim.content"></p>
                 </mat-card-content>
                 <mat-card-actions>
                     <a routerLink="/claims/{{claim.id}}" mat-button>Review</a>

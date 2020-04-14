@@ -1,5 +1,6 @@
 const admin = require('firebase-admin');
 const crypto = require('crypto');
+const fs = require('fs');
 
 admin.initializeApp({
     credential: admin.credential.cert('../firebase-cert.json'),
@@ -7,24 +8,9 @@ admin.initializeApp({
 
 const firestore = admin.firestore();
 
-const claimExamples = [
-    {
-        content: `Did you know that this thing did this?\nPlease forward to your friends and let them know!`,
-        hitCount: 212,
-        hitCountryCodes: ['AU'],
-        truthfulness: 'mostly_true',
-        factCheckerLinks: [],
-    },
-    {
-        content: `I have a friend in the CIA who told me that aliens are visiting.\nPlease forward to your friends and let them know!`,
-        hitCount: 27,
-        hitCountryCodes: ['US'],
-        truthfulness: 'false',
-        factCheckerLinks: ['https://example.com/not-true'],
-    },
-];
+const mockClaims = JSON.parse(fs.readFileSync('./mock-claims.json'));
 
-for (let claim of claimExamples) {
+for (let claim of mockClaims) {
     const batch = firestore.batch();
 
     const claimId = crypto

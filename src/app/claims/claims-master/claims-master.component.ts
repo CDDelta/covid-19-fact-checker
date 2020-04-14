@@ -100,6 +100,7 @@ export class ClaimsMasterComponent implements OnInit {
                 (d) => ({ id: d.id, ...d.data() } as Claim),
               );
             }),
+            tap((p) => p.map((c) => c.content = c.content.replace(/\n/g, '<br>'))),
             scan((whole, page) => whole.concat(page)),
             tap(() => this.claimsLoading$.next(false)),
           ),
