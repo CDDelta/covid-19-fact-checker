@@ -39,7 +39,7 @@ export const processClaimHit = functions.pubsub
         countryCodes: {
           [payload.fromCountryCode]: admin.firestore.FieldValue.increment(1),
         },
-      } as Omit<AggregatedHitBucket, 'countries'>,
+      } as Omit<AggregatedHitBucket, 'countryCodes'>,
       {
         merge: true,
       },

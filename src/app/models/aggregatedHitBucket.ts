@@ -1,4 +1,4 @@
-import { firestore } from 'firebase-admin';
+import { firestore } from 'firebase';
 
 export interface AggregatedHitBucket {
   date: firestore.Timestamp;

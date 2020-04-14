@@ -4,25 +4,35 @@
 </a>
 
 <div *ngIf="claim$ | async as claim; else loading" class="claim-wrapper">
-    <mat-card>
+    <mat-card class="claim-content">
         <mat-card-content>
             <p>{{claim.content}}</p>
         </mat-card-content>
     </mat-card>
-    <mat-card>
+    <mat-card class="claim-details">
         <button *ngIf="auth.user | async" class="edit-btn" color="primary" (click)="openEditDialog()" mat-fab>
             <mat-icon>edit</mat-icon>
         </button>
         <p>Date Added: {{claim.dateAdded.toDate() | date}}</p>
         <p>Truthfulness: {{claim.truthfulness | truthfulness}}</p>
         <p>Hits: {{claim.hitCount}}</p>
-        <p>Fact Checker Links:</p>
-        <ul>
-            <li *ngFor="let link of claim.factCheckerLinks">
-                <a [href]="link" target="none">{{link}}</a>
-            </li>
-        </ul>
+        <ng-container *ngIf="claim.factCheckerLinks.length">
+            <p>Fact Checker Links:</p>
+            <ul>
+                <li *ngFor="let link of claim.factCheckerLinks">
+                    <a [href]="link" target="none">{{link}}</a>
+                </li>
+            </ul>
+        </ng-container>
+        <div class="charts-container">
+            <ngx-charts-line-chart *ngIf="pastWeekHitsData$ | async as pastWeekHitsData" [results]="pastWeekHitsData"
+                xAxisLabel="Date" yAxisLabel="Hit Count" xAxis="true" yAxis="true" showXAxisLabel="true"
+                showYAxisLabel="true">
+            </ngx-charts-line-chart>
+            <ngx-charts-bar-vertical *ngIf="countryHitsData$ | async as countryHitsData" [results]="countryHitsData">
 
+            </ngx-charts-bar-vertical>
+        </div>
     </mat-card>
 </div>
 

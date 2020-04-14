@@ -1,4 +1,4 @@
-import * as firebase from 'firebase';
+import { firestore } from 'firebase';
 
 export enum Truthfulness {
   Unverified = 'unverified',
@@ -16,5 +16,5 @@ export interface Claim {
   hitCountryCodes: string[];
   truthfulness: Truthfulness;
   factCheckerLinks: string[];
-  dateAdded: firebase.firestore.Timestamp;
+  dateAdded: firestore.Timestamp;
 }

@@ -6,12 +6,12 @@ service cloud.firestore {
       allow update: if request.auth.uid != null;
       allow create, delete: if false;
 
-      match /raw_hits {
+      match /raw_hits/{document=**} {
         allow read: if true;
         allow create, update, delete: if false;
       }
 
-      match /daily_aggregated_hits {
+      match /daily_aggregated_hits/{document=**} {
         allow read: if true;
         allow create, update, delete: if false;
       }

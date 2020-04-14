@@ -14,8 +14,16 @@
   gap: 0.75rem;
   grid-template-columns: 2fr 1fr;
 
-  @media ($mat-xsmall), ($mat-small) {
+  @media ($mat-small) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media ($mat-xsmall) {
     grid-template-columns: 1fr;
+  }
+
+  > * {
+    height: max-content;
   }
 }
 
@@ -23,4 +31,15 @@
   position: absolute;
   top: -25px;
   right: 10px;
+}
+
+.charts-container {
+  width: 100%;
+  max-width: 100%;
+
+  > * {
+    display: block;
+    max-width: 100%;
+    max-height: 25rem;
+  }
 }
