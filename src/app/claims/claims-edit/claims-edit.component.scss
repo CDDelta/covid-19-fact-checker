@@ -1,0 +1,30 @@
+@import '~@angular/material/theming';
+
+:host {
+    display: flex;
+
+    @media ($mat-xsmall), ($mat-small) {
+        flex-direction: column;
+    }
+}
+
+.claim-details {    
+    flex: 2;
+}
+
+.claim-form {
+    flex: 1;
+
+    > *, .mat-list > * {
+        width: 100%;
+    }
+}
+
+.links-header {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        margin: auto 0;
+    }
+}

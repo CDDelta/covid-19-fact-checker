@@ -9,6 +9,10 @@ body {
   font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
+a {
+  color: #fff;
+}
+
 [mat-button],
 [mat-raised-button],
 [mat-stroked-button] {
@@ -17,6 +21,15 @@ body {
   .mat-icon {
     margin-right: 0.2rem;
   }
+}
+
+.mat-dialog-actions {
+  justify-content: end;
+}
+
+// Hack to fix suffix in mat-form-field alignment.
+.mat-form-field-appearance-outline .mat-form-field-suffix {
+  top: 0.7em !important;
 }
 
 .text-center {

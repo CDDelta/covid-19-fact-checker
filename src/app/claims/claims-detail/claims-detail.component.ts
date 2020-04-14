@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { ActivatedRoute } from '@angular/router';
-import { BehaviorSubject, Observable } from 'rxjs';
-import { switchMap, mergeMap } from 'rxjs/operators';
+import { BehaviorSubject } from 'rxjs';
+import { switchMap, tap } from 'rxjs/operators';
 import { Claim } from '../../models/claim';
 import { MatDialog } from '@angular/material/dialog';
 import { ClaimsEditComponent } from '../claims-edit/claims-edit.component';
@@ -24,13 +24,22 @@ export class ClaimsDetailComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    (this.route.params.pipe(
-      switchMap((params) => this.db.doc(`/claims/${params.id}`).valueChanges()),
-    ) as Observable<Claim>).subscribe(this.claim$);
+    this.route.params
+      .pipe(
+        switchMap((params) =>
+          this.db
+            .doc(`/claims/${params.id}`)
+            .valueChanges()
+            .pipe(tap((c: Claim) => (c.id = params.id))),
+        ),
+      )
+      .subscribe(this.claim$);
   }
 
   openEditDialog(): void {
     this.dialog.open(ClaimsEditComponent, {
+      width: '95%',
+      maxWidth: '60rem',
       data: this.claim$.value,
     });
   }

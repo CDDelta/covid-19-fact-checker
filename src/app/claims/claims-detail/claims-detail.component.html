@@ -16,6 +16,13 @@
         <p>Date Added: {{claim.dateAdded.toDate() | date}}</p>
         <p>Truthfulness: {{claim.truthfulness | truthfulness}}</p>
         <p>Hits: {{claim.hitCount}}</p>
+        <p>Fact Checker Links:</p>
+        <ul>
+            <li *ngFor="let link of claim.factCheckerLinks">
+                <a [href]="link" target="none">{{link}}</a>
+            </li>
+        </ul>
+
     </mat-card>
 </div>
 

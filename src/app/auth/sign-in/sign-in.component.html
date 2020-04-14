@@ -9,9 +9,7 @@
         </mat-form-field>
         <button color="primary" mat-raised-button>Sign in with Email</button>
     </form>
-    <div class="loading-shade" *ngSwitchCase="'sending_email'">
-        <mat-spinner diameter="50"></mat-spinner>
-    </div>
+    <app-loading-shade class="loading-shade" *ngSwitchCase="'sending_email'"></app-loading-shade>
     <ng-container *ngSwitchCase="'sent_email'">
         <h1>Email sent!</h1>
         <p>Check your email for the link to sign in.</p>
