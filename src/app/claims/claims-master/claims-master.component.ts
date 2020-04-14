@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 import { Claim, Truthfulness } from '../../models/claim';
 import { BehaviorSubject, combineLatest } from 'rxjs';
 import { switchMap, scan, tap, map } from 'rxjs/operators';
+import countries from './countries';
 
 const PAGE_SIZE = 9;
 
@@ -17,6 +18,8 @@ const PAGE_SIZE = 9;
   styleUrls: ['./claims-master.component.scss'],
 })
 export class ClaimsMasterComponent implements OnInit {
+  public countriesList = countries;
+
   public truthfulnessFilter$: BehaviorSubject<Truthfulness>;
   public countryFilter$: BehaviorSubject<string>;
   public loadMoreEvent$ = new BehaviorSubject<any>(null);
@@ -100,7 +103,9 @@ export class ClaimsMasterComponent implements OnInit {
                 (d) => ({ id: d.id, ...d.data() } as Claim),
               );
             }),
-            tap((p) => p.map((c) => c.content = c.content.replace(/\n/g, '<br>'))),
+            tap((p) =>
+              p.map((c) => (c.content = c.content.replace(/\n/g, '<br>'))),
+            ),
             scan((whole, page) => whole.concat(page)),
             tap(() => this.claimsLoading$.next(false)),
           ),

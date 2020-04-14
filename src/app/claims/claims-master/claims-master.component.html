@@ -16,8 +16,9 @@
         <mat-label>Country</mat-label>
         <mat-select value="{{countryFilter$.value}}" (valueChange)="countryFilter$.next($event)">
             <mat-option value="">Any</mat-option>
-            <mat-option value="US">United States</mat-option>
-            <mat-option value="AU">Australia</mat-option>
+            <mat-option *ngFor="let country of countriesList | keyvalue" [value]="country.key">
+                {{country.value}}
+            </mat-option>
         </mat-select>
     </mat-form-field>
 </div>
