@@ -1,10 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { AngularFirestore } from '@angular/fire/firestore';
+import {
+  AngularFirestore,
+  QueryDocumentSnapshot,
+} from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { Claim, Truthfulness } from '../../models/claim';
 import { BehaviorSubject, combineLatest } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
+import { switchMap, scan, tap, map } from 'rxjs/operators';
+
+const PAGE_SIZE = 9;
 
 @Component({
   selector: 'app-claims-master',
@@ -14,8 +19,18 @@ import { switchMap } from 'rxjs/operators';
 export class ClaimsMasterComponent implements OnInit {
   public truthfulnessFilter$: BehaviorSubject<Truthfulness>;
   public countryFilter$: BehaviorSubject<string>;
+  public loadMoreEvent$ = new BehaviorSubject<any>(null);
 
-  public claims$: Observable<Claim[]>;
+  public claimsQuery$: Observable<{
+    loading: boolean;
+    atEnd: boolean;
+    claims: Claim[];
+  }>;
+
+  private claims$ = new BehaviorSubject<Claim[]>([]);
+  private claimsLoading$ = new BehaviorSubject<boolean>(true);
+  private claimsCursor: QueryDocumentSnapshot<Claim>;
+  private claimsAtEnd = false;
 
   constructor(
     private db: AngularFirestore,
@@ -42,27 +57,62 @@ export class ClaimsMasterComponent implements OnInit {
         }),
     );
 
-    this.claims$ = this.route.queryParams.pipe(
-      switchMap(
-        ({ truthfulness, country }) =>
-          this.db
-            .collection('claims', (ref) => {
-              let query = ref.orderBy('hitCount', 'desc');
+    this.route.queryParams
+      .pipe(
+        tap(() => {
+          this.claimsAtEnd = false;
+          this.claimsCursor = null;
+          this.claims$.next([]);
+        }),
+        switchMap(({ truthfulness, country }) =>
+          this.loadMoreEvent$.pipe(
+            tap(() => this.claimsLoading$.next(true)),
+            switchMap(() =>
+              this.db
+                .collection('claims', (ref) => {
+                  let query = ref.orderBy('hitCount', 'desc').limit(PAGE_SIZE);
 
-              if (truthfulness)
-                query = query.where('truthfulness', '==', truthfulness);
+                  if (this.claimsCursor)
+                    query = query.startAfter(this.claimsCursor);
 
-              if (country)
-                query = query.where(
-                  'hitCountryCodes',
-                  'array-contains',
-                  country,
-                );
+                  if (truthfulness)
+                    query = query.where('truthfulness', '==', truthfulness);
 
-              return query;
-            })
-            .valueChanges({ idField: 'id' }) as Observable<Claim[]>,
-      ),
+                  if (country)
+                    query = query.where(
+                      'hitCountryCodes',
+                      'array-contains',
+                      country,
+                    );
+
+                  return query;
+                })
+                .get(),
+            ),
+            map((snapshot) => {
+              if (snapshot.empty || snapshot.size < PAGE_SIZE)
+                this.claimsAtEnd = true;
+
+              this.claimsCursor = snapshot.docs[
+                snapshot.docs.length - 1
+              ] as QueryDocumentSnapshot<Claim>;
+              return snapshot.docs.map(
+                (d) => ({ id: d.id, ...d.data() } as Claim),
+              );
+            }),
+            scan((whole, page) => whole.concat(page)),
+            tap(() => this.claimsLoading$.next(false)),
+          ),
+        ),
+      )
+      .subscribe(this.claims$);
+
+    this.claimsQuery$ = combineLatest(this.claimsLoading$, this.claims$).pipe(
+      map(([loading, claims]) => ({
+        loading,
+        atEnd: this.claimsAtEnd,
+        claims,
+      })),
     );
   }
 }

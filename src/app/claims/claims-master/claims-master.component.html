@@ -22,10 +22,10 @@
     </mat-form-field>
 </div>
 
-<ng-container *ngIf="claims$ | async as claims; else loading">
-    <ng-container *ngIf="claims.length > 0; else placeholder">
+<ng-container *ngIf="(claimsQuery$ | async) as query">
+    <ng-container *ngIf="query.claims.length > 0; else placeholder">
         <div class="claims-grid">
-            <mat-card *ngFor="let claim of claims" class="claim-card">
+            <mat-card *ngFor="let claim of query.claims" class="claim-card">
                 <mat-card-content>
                     <p>{{claim.content}}</p>
                 </mat-card-content>
@@ -34,15 +34,12 @@
                 </mat-card-actions>
             </mat-card>
         </div>
-        <div class="text-center">
-            <button class="load-btn" mat-stroked-button>Load More</button>
+        <div *ngIf="!query.loading && !query.atEnd" class="text-center">
+            <button class="load-btn" (click)="loadMoreEvent$.next(null)" mat-stroked-button>Load More</button>
         </div>
     </ng-container>
     <ng-template #placeholder>
-        <h3 class="text-center">There's nothing to see here.</h3>
+        <h3 *ngIf="!query.loading" class="text-center">There's nothing to see here.</h3>
     </ng-template>
+    <app-page-spinner *ngIf="query.loading"></app-page-spinner>
 </ng-container>
-
-<ng-template #loading>
-    <app-page-spinner></app-page-spinner>
-</ng-template>
