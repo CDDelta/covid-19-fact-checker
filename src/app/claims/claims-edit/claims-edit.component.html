@@ -3,7 +3,8 @@
 <div class="claim-details">
     <p>Date Added: {{claim.dateAdded.toDate() | date}}</p>
     <p>Hits: {{claim.hitCount}}</p>
-    <p>{{claim.content}}</p>
+    <mat-divider></mat-divider>
+    <p [innerHTML]="claim.content"></p>
 </div>
 
 <form class="claim-form" [formGroup]="form">
