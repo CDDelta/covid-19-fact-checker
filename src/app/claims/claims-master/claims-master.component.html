@@ -25,7 +25,7 @@
 <ng-container *ngIf="claims$ | async as claims; else loading">
     <ng-container *ngIf="claims.length > 0; else placeholder">
         <div class="claims-grid">
-            <mat-card *ngFor="let claim of claims">
+            <mat-card *ngFor="let claim of claims" class="claim-card">
                 <mat-card-content>
                     <p>{{claim.content}}</p>
                 </mat-card-content>

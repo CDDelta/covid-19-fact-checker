@@ -36,6 +36,22 @@
   }
 }
 
+.claim-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 10rem;
+
+  .mat-card-content {
+    margin: 0;
+    overflow-y: auto;
+  }
+  .mat-card-actions {
+    text-align: right;
+  }
+}
+
 .load-btn {
   margin-top: 0.75rem;
 }
