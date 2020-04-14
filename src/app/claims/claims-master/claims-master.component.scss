@@ -2,14 +2,14 @@
 
 :host {
   display: block;
-  padding: 0.75rem;
+  padding: 12px;
 }
 
 .filter-row {
   display: flex;
 
   .mat-form-field {
-    margin-right: 0.75rem;
+    margin-right: 12px;
   }
 
   @media ($mat-xsmall) {
@@ -24,7 +24,7 @@
 .claims-grid {
   display: grid;
 
-  gap: 0.75rem;
+  gap: 12px;
   grid-template-columns: repeat(3, 1fr);
 
   @media ($mat-small) {
@@ -41,7 +41,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  height: 10rem;
+  height: 150px;
 
   .mat-card-content {
     margin: 0;
@@ -53,5 +53,5 @@
 }
 
 app-page-spinner, .load-btn {
-  margin-top: 0.75rem;
+  margin-top: 12px;
 }

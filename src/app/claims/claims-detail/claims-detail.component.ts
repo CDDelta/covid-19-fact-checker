@@ -107,7 +107,7 @@ export class ClaimsDetailComponent implements OnInit {
   openEditDialog(): void {
     this.dialog.open(ClaimsEditComponent, {
       width: '95%',
-      maxWidth: '60rem',
+      maxWidth: '1000px',
       data: this.claim$.value,
     });
   }
