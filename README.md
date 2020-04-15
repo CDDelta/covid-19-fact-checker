@@ -1,4 +1,4 @@
-# Forwarded Message Fact Checker
+# SMS Fact Checker
 
 ## About
 
@@ -21,14 +21,6 @@ It consists of an SMS responder that logs claims for fact-checking and replies w
 - Dashboard
   - Allows fact checkers to verify received claims.
   - Tracks and displays analytics on claims it receives (number of hits, country of origin etc.).
-
-## Screenshots
-
-Claims list                                     |  Claims detail                                   | Claims edit                                  |
-:----------------------------------------------:|:------------------------------------------------:|:--------------------------------------------:|
-![Claims list](/docs/assets/claims-master.png)  | ![Claims detail](/docs/assets/claims-detail.png) | ![Claims edit](/docs/assets/claims-edit.png) |
-
-<img src="/docs/assets/sms-responder.jpeg" width="150">
 
 ## Stack
 
@@ -135,6 +127,15 @@ firebase deploy --only functions,firestore
 4. Point the twilio Programmable SMS webhook to the `onMessageReceived` Firebase Function.
 
 You can now message your twilio phone number to use the SMS responder or visit the dashboard at your Firebase Hosting domain.
+
+## Screenshots
+
+Claims list                                     |  Claims detail                                   | Claims edit                                  |
+:----------------------------------------------:|:------------------------------------------------:|:--------------------------------------------:|
+![Claims list](/docs/assets/claims-master.png)  | ![Claims detail](/docs/assets/claims-detail.png) | ![Claims edit](/docs/assets/claims-edit.png) |
+
+#### SMS responder
+<img src="/docs/assets/sms-responder.jpeg" width="250">
 
 ## License
 
