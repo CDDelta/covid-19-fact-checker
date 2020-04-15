@@ -2,7 +2,7 @@ import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import * as crypto from 'crypto';
 import { PubSub } from '@google-cloud/pubsub';
-import * as twillio from 'twilio';
+import * as twilio from 'twilio';
 import { Claim, Truthfulness } from './models/claim';
 import { ClaimHitPayload } from './models/claimHitPayload';
 
@@ -14,7 +14,7 @@ export const onMessageReceived = functions.https.onRequest(
   async (request, response) => {
     if (process.env.NODE_ENV === 'production') {
       if (
-        !twillio.validateExpressRequest(request, config.twillio.auth_token, {
+        !twilio.validateExpressRequest(request, config.twilio.auth_token, {
           url: `https://${process.env.FUNCTION_REGION}-${process.env.GCLOUD_PROJECT}.cloudfunctions.net/${process.env.FUNCTION_NAME}`,
         })
       ) {
@@ -28,7 +28,7 @@ export const onMessageReceived = functions.https.onRequest(
       FromCountry: string;
     };
 
-    const twiml = new twillio.twiml.MessagingResponse();
+    const twiml = new twilio.twiml.MessagingResponse();
 
     const receivedMsg = payload.Body.trim();
 

@@ -27,7 +27,7 @@ It consists of an SMS responder that logs claims for fact checking and replies w
 - Angular
 - Firebase (Auth, Hosting, Firestore, Functions)
 - Google Cloud Platform (PubSub)
-- Twillio (Programmable SMS)
+- Twilio (Programmable SMS)
 
 ### How it works
 
@@ -108,7 +108,7 @@ all the config values we need to run the application:
 1. Set config variables
 
 ```bash
-firebase functions:config:set twillio.account_sid="ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" twillio.auth_token="your_auth_token"
+firebase functions:config:set twilio.account_sid="ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" twilio.auth_token="your_auth_token"
 ```
 
 2. Deploy the dashboard
@@ -123,9 +123,9 @@ ng deploy
 firebase deploy --only functions,firestore
 ```
 
-4. Point the Twillio Programmable SMS webhook to the `onMessageReceived` Firebase Function.
+4. Point the twilio Programmable SMS webhook to the `onMessageReceived` Firebase Function.
 
-You can now message your Twillio phone number to use the SMS responder or visit the dashboard at your Firebase Hosting domain.
+You can now message your twilio phone number to use the SMS responder or visit the dashboard at your Firebase Hosting domain.
 
 ## License
 
