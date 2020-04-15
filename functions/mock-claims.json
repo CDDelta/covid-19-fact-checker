@@ -3,20 +3,23 @@
     "content": "Did you know that this thing did this?\n\nPlease forward to your friends and let them know!",
     "hitCount": 212,
     "hitCountryCodes": [
-      "AU"
+      "AU",
+      "BE"
     ],
-    "truthfulness": "mostly_true",
+    "truthfulness": "unverified",
     "factCheckerLinks": []
   },
   {
     "content": "I have a friend in the CIA who told me that aliens are visiting.\n\nPlease forward to your friends and let them know!",
-    "hitCount": 27,
+    "hitCount": 27412,
     "hitCountryCodes": [
-      "US"
+      "US",
+      "LK"
     ],
     "truthfulness": "false",
     "factCheckerLinks": [
-      "https://example.com/not-true"
+      "https://example.com/not-true",
+      "https://example.com/absolutely-not-true"
     ]
   },
   {
@@ -24,11 +27,490 @@
     "hitCount": 123,
     "hitCountryCodes": [
       "US",
-      "BE"
+      "UK"
     ],
     "truthfulness": "false",
     "factCheckerLinks": [
       "https://example.com/not-true"
+    ]
+  },
+  {
+    "content": "My doctor friend just told me what's going down in the US. He said the government is covering up a pending alien invasion.\n\nStart stockpiling weapons and food now before it's too late\n\n Please forward and share with your friends, the truth needs to get out!",
+    "hitCount": 123,
+    "hitCountryCodes": [
+      "US",
+      "UK"
+    ],
+    "truthfulness": "mostly_false",
+    "factCheckerLinks": [
+      "https://example.com/mostly_false"
+    ]
+  },
+  {
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nPhasellus faucibus scelerisque eleifend donec pretium. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 123,
+    "hitCountryCodes": [
+      "IN",
+      "LK"
+    ],
+    "truthfulness": "true",
+    "factCheckerLinks": [
+      "https://example.com/true"
+    ]
+  },
+  {
+    "content": "Lconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nPhasellus faucibus scelerisque eleifend donec pretium. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 13211,
+    "hitCountryCodes": [
+      "TW",
+      "LA"
+    ],
+    "truthfulness": "mostly_true",
+    "factCheckerLinks": [
+      "https://example.com/mostly-true",
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Phasellus faucibus scelerisque eleifend donec pretium. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 1321,
+    "hitCountryCodes": [
+      "TW",
+      "UK"
+    ],
+    "truthfulness": "unverified",
+    "factCheckerLinks": [
+      "https://example.com/really-not",
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "My best friend just told me what's going down in the US. He said the government is covering up a pending alien invasion.\n\nStart stockpiling weapons and food now before it's too late\n\n Please forward and share with your friends, the truth needs to get out!",
+    "hitCount": 12321,
+    "hitCountryCodes": [
+      "US",
+      "UK"
+    ],
+    "truthfulness": "half_true",
+    "factCheckerLinks": [
+      "https://example.com/not-exactly"
+    ]
+  },
+  {
+    "content": "My sources just told me Master Oogway has returned. All hail the Kung Fu turtle.\n\nThis is really happening! All those years of government tyranny is finally ending!\n\n Please forward and share with your friends, the truth needs to get out!",
+    "hitCount": 1211,
+    "hitCountryCodes": [
+      "MY",
+      "CH",
+      "UK"
+    ],
+    "truthfulness": "false",
+    "factCheckerLinks": [
+      "https://example.com/this-makes-no-sense"
+    ]
+  },
+  {
+    "content": "Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 1121,
+    "hitCountryCodes": [
+      "TW",
+      "UK"
+    ],
+    "truthfulness": "unverified",
+    "factCheckerLinks": [
+      "https://example.com/really-not",
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 2221,
+    "hitCountryCodes": [
+      "TW",
+      "UK"
+    ],
+    "truthfulness": "half_true",
+    "factCheckerLinks": [
+      "https://example.com/really-not",
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 3221,
+    "hitCountryCodes": [
+      "TW",
+      "UK"
+    ],
+    "truthfulness": "mostly_true",
+    "factCheckerLinks": [
+      "https://example.com/really-not",
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Tellus pellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 4221,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "mostly_false",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Pellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 321,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "unverified",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Aellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 421,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "mostly_true",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 421,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "true",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 4421,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "true",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 4421,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "true",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 4421,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "false",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 5421,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "mostly_false",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 5421,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "mostly_true",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "You know that this thing did this?\n\nPlease forward to your friends and let them know!",
+    "hitCount": 212,
+    "hitCountryCodes": [
+      "AU",
+      "BE"
+    ],
+    "truthfulness": "unverified",
+    "factCheckerLinks": []
+  },
+  {
+    "content": "We have a friend in the CIA who told me that aliens are visiting.\n\nPlease forward to your friends and let them know!",
+    "hitCount": 27412,
+    "hitCountryCodes": [
+      "US",
+      "LK"
+    ],
+    "truthfulness": "false",
+    "factCheckerLinks": [
+      "https://example.com/not-true",
+      "https://example.com/absolutely-not-true"
+    ]
+  },
+  {
+    "content": "When you can hold your breath for over 10 minutes that means you are immortal. My doctor friend told me so.\n\nPlease forward to your friends and let them know!",
+    "hitCount": 123,
+    "hitCountryCodes": [
+      "US",
+      "UK"
+    ],
+    "truthfulness": "false",
+    "factCheckerLinks": [
+      "https://example.com/not-true"
+    ]
+  },
+  {
+    "content": "Your doctor friend just told me what's going down in the US. He said the government is covering up a pending alien invasion.\n\nStart stockpiling weapons and food now before it's too late\n\n Please forward and share with your friends, the truth needs to get out!",
+    "hitCount": 123,
+    "hitCountryCodes": [
+      "US",
+      "UK"
+    ],
+    "truthfulness": "mostly_false",
+    "factCheckerLinks": [
+      "https://example.com/mostly_false"
+    ]
+  },
+  {
+    "content": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nPhasellus faucibus scelerisque eleifend donec pretium. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 123,
+    "hitCountryCodes": [
+      "IN",
+      "LK"
+    ],
+    "truthfulness": "true",
+    "factCheckerLinks": [
+      "https://example.com/true"
+    ]
+  },
+  {
+    "content": "Vor consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nPhasellus faucibus scelerisque eleifend donec pretium. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 13211,
+    "hitCountryCodes": [
+      "TW",
+      "LA"
+    ],
+    "truthfulness": "mostly_true",
+    "factCheckerLinks": [
+      "https://example.com/mostly-true",
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Ich phasellus faucibus scelerisque eleifend donec pretium. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 1321,
+    "hitCountryCodes": [
+      "TW",
+      "UK"
+    ],
+    "truthfulness": "unverified",
+    "factCheckerLinks": [
+      "https://example.com/really-not",
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Your best friend just told me what's going down in the US. He said the government is covering up a pending alien invasion.\n\nStart stockpiling weapons and food now before it's too late\n\n Please forward and share with your friends, the truth needs to get out!",
+    "hitCount": 12321,
+    "hitCountryCodes": [
+      "US",
+      "UK"
+    ],
+    "truthfulness": "half_true",
+    "factCheckerLinks": [
+      "https://example.com/not-exactly"
+    ]
+  },
+  {
+    "content": "Our sources just told me Master Oogway has returned. All hail the Kung Fu turtle.\n\nThis is really happening! All those years of government tyranny is finally ending!\n\n Please forward and share with your friends, the truth needs to get out!",
+    "hitCount": 1211,
+    "hitCountryCodes": [
+      "MY",
+      "CH",
+      "UK"
+    ],
+    "truthfulness": "false",
+    "factCheckerLinks": [
+      "https://example.com/this-makes-no-sense"
+    ]
+  },
+  {
+    "content": "Au Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 1121,
+    "hitCountryCodes": [
+      "TW",
+      "UK"
+    ],
+    "truthfulness": "unverified",
+    "factCheckerLinks": [
+      "https://example.com/really-not",
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Prutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 2221,
+    "hitCountryCodes": [
+      "TW",
+      "UK"
+    ],
+    "truthfulness": "half_true",
+    "factCheckerLinks": [
+      "https://example.com/really-not",
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Fruutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 3221,
+    "hitCountryCodes": [
+      "TW",
+      "UK"
+    ],
+    "truthfulness": "mostly_true",
+    "factCheckerLinks": [
+      "https://example.com/really-not",
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Zellus pellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 4221,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "mostly_false",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "PWllentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 321,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "unverified",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "QWEellentesque eu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 421,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "mostly_true",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "AEu tincidunt tortor aliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 421,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "true",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "LIliquam nulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 4421,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "true",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "pringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 4421,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "true",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Qulla. Fringilla ut morbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 4421,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "false",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "Corbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 5421,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "mostly_false",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
+    ]
+  },
+  {
+    "content": "torbi tincidunt augue. Tincidunt dui ut ornare lectus.\n\nNec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nam aliquam sem et tortor consequat. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Morbi leo urna molestie at elementum eu facilisis sed odio. Quam pellentesque nec nam aliquam sem. Ornare aenean euismod elementum nisi. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget.\n\nHendrerit dolor magna eget est lorem. Id volutpat lacus laoreet non curabitur gravida arcu ac.Donec ac odio tempor orci dapibus. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Aliquet eget sit amet tellus cras. Vitae et leo duis ut diam quam nulla. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Nunc sed velit dignissim sodales ut eu sem integer vitae. Nunc id cursus metus aliquam eleifend mi in nulla. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Aliquam faucibus purus in massa tempor nec feugiat nisl. Imperdiet proin fermentum leo vel orci porta non.\n\nPhasellus faucibus scelerisque eleifend donec pretium.\n\nIpsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed viverra tellus in hac habitasse.",
+    "hitCount": 5421,
+    "hitCountryCodes": [
+      "LK",
+      "UK"
+    ],
+    "truthfulness": "mostly_true",
+    "factCheckerLinks": [
+      "https://example.com/snopessadsa"
     ]
   }
 ]

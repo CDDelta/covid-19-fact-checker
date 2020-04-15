@@ -34,10 +34,12 @@ for (let claim of mockClaims) {
 
         batch.set(claimRef.collection('daily_aggregated_hits').doc(bucketDate.getTime().toString()), {
             date: admin.firestore.Timestamp.fromDate(bucketDate),
-            countryCodes: {
-                'US': Math.floor(dayCount * 3 / 4),
-                'AU': Math.floor(dayCount / 4),
-            },
+            countryCodes: distribute(claim.hitCountryCodes.length, dayCount).reduce(
+                (map, countryCount, i) => {
+                    map[claim.hitCountryCodes[i]] = countryCount;
+                    return map;
+                },
+                {}),
         });
     }
 
@@ -51,5 +53,13 @@ function getStartOfPastDay(daysBefore) {
     const day = d.getUTCDate();
 
     return new Date(Date.UTC(year, month, day - daysBefore, 0, 0, 0, 0));
+}
+
+function distribute(length, value) {
+    if (length <= 1)
+        return [value];
+    var half = Math.floor(length / 2),
+        dist = Math.floor(Math.random() * value);
+    return distribute(half, dist).concat(distribute(length - half, value - dist));
 }
 
