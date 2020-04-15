@@ -58,7 +58,7 @@ git clone https://github.com/CDDelta/covid-19-fact-checker.git
 cd covid-19-fact-checker
 ```
 
-2. Update your project id in `.firebaserc`.
+2. Update your project id in `.firebaserc` and replace the Firebase SDK config in `/src/environments/environment.ts`.
 
 3. Install dependencies
 
@@ -84,7 +84,7 @@ You can add mock data into your database with these steps.
 
 1. Download a service account credential from [Firebase](https://console.firebase.google.com) for the Admin SDK.
 
-2. Place the credential in the root directory and rename it `firebase-cret.json`.
+2. Place the credential in the root directory and rename it `firebase-cert.json`.
 
 3. `cd` into the `functions` directory and run
 ```bash
