@@ -73,6 +73,8 @@ npm start
 
 5. Navigate to [http://localhost:4200](http://localhost:4200)
 
+6. Enable passwordless sign in in Firebase and add a user to allow sign in to the dashboard.
+
 That's it!
 
 You can addtionally setup the Firebase [emulators](https://firebase.google.com/docs/rules/emulator-setup) to run completely offline.
