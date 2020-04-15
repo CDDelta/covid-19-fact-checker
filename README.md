@@ -19,8 +19,6 @@ _EXAMPLES_
   - Allows fact checkers to verify received claims.
   - Tracks and displays analytics on claims it receives (number of hits, country of origin etc.).
 
----
-
 ## Stack
 
 - Angular
@@ -35,8 +33,6 @@ When the SMS responder receives a new claim, it logs it in Firestore for fact ch
 Every time the responder receives a claim, a cloud function is triggered with PubSub to log analytics on it which can be tracked in the dashboard to monitor their spread.
 
 ![architecture diagram](./docs/assets/architecture_diagram.png)
-
----
 
 ## Set up
 
@@ -124,8 +120,6 @@ firebase deploy
 4. Point the Twillio Programmable SMS webhook to the `onMessageReceived` Firebase Function.
 
 You can now message your Twillio phone number to use the SMS responder or visit the dashboard at your Firebase Hosting domain.
-
----
 
 ## License
 
