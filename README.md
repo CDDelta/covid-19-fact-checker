@@ -2,25 +2,33 @@
 
 ## About
 
-This is a tool for fact checking and tracking messages that are often spread on messaging platforms through forwarding. This can potentially help slow down the spread of dangerous fake news through messaging platforms and aid journalists in tracking the spread of these claims.
+This is a tool for fact-checking and tracking messages that are often spread on messaging platforms through forwarding. This can potentially help slow down the spread of dangerous fake news through messaging platforms and aid journalists in tracking the spread of these claims.
 
 Here are some examples of the dangers of fake news on messaging platforms:
 
 - [WhatsApp limits message forwarding to slow spread of coronavirus misinformation - Reuters](https://www.reuters.com/article/us-health-coronavirus-whatsapp/whatsapp-limits-message-forwarding-to-slow-spread-of-coronavirus-misinformation-idUSKBN21P0YZ)
 - [How WhatsApp Leads Mobs to Murder in India - NYT](https://www.nytimes.com/interactive/2018/07/18/technology/whatsapp-india-killings.html)
 
-It consists of an SMS responder that logs claims for fact checking and replies with information on it, and a dashboard for fact checkers to verify received claims and track the spread of messages through time and around the world.
+It consists of an SMS responder that logs claims for fact-checking and replies with information on it, and a dashboard for fact checkers to verify received claims and track the spread of messages through time and around the world.
 
 ## Features
 
 - SMS Responder
 
-  - Logs claims it receives for fact checking.
+  - Logs claims it receives for fact-checking.
   - Replies with information on claims that it has.
 
 - Dashboard
   - Allows fact checkers to verify received claims.
   - Tracks and displays analytics on claims it receives (number of hits, country of origin etc.).
+
+## Screenshots
+
+Claims list                                     |  Claims detail                                   | Claims edit                                  |
+:----------------------------------------------:|:------------------------------------------------:|:--------------------------------------------:|
+![Claims list](/docs/assets/claims-master.png)  | ![Claims detail](/docs/assets/claims-detail.png) | ![Claims edit](/docs/assets/claims-edit.png) |
+
+<img src="/docs/assets/sms-responder.jpeg" width="150">
 
 ## Stack
 
@@ -31,7 +39,7 @@ It consists of an SMS responder that logs claims for fact checking and replies w
 
 ### How it works
 
-When the SMS responder receives a new claim, it logs it in Firestore for fact checking. Next time it receives the same message, it will reply with information on it if it has been fact checked.
+When the SMS responder receives a new claim, it logs it in Firestore for fact-checking. Next time it receives the same message, it will reply with information on it if it has been fact checked.
 
 Every time the responder receives a claim, a cloud function is triggered with PubSub to log analytics on it which can be tracked in the dashboard to monitor their spread.
 
@@ -89,6 +97,7 @@ You can add mock data into your database with these steps.
 2. Place the credential in the root directory and rename it `firebase-cert.json`.
 
 3. `cd` into the `functions` directory and run
+
 ```bash
 node database-seeder.js
 ```
