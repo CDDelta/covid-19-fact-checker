@@ -26,6 +26,22 @@
   }
 }
 
+.claim-content {
+  border-top-style: solid;
+
+  &.claim_false {
+    border-color: #ef5350;
+  }
+  &.claim_mostly_false,
+  &.claim_half_true,
+  &.claim_mostly_true {
+    border-color: #ffa726;
+  }
+  &.claim_true {
+    border-color: #66bb6a;
+  }
+}
+
 .edit-btn {
   position: absolute;
   top: -25px;

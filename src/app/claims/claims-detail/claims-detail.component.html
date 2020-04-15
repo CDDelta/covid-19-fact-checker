@@ -4,7 +4,7 @@
 </a>
 
 <div *ngIf="claim$ | async as claim; else loading" class="claim-wrapper">
-    <mat-card class="claim-content">
+    <mat-card class="claim-content" [ngClass]="'claim_' + claim.truthfulness">
         <mat-card-content>
             <p [innerHTML]="claim.content"></p>
         </mat-card-content>
