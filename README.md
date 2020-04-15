@@ -2,11 +2,14 @@
 
 ## About
 
-This is a tool for fact checking and tracking messages that are often spread on messaging platforms through forwarding.
+This is a tool for fact checking and tracking messages that are often spread on messaging platforms through forwarding. This can potentially help slow down the spread of dangerous fake news through messaging platforms and aid journalists in tracking the spread of these claims.
+
+Here are some examples of the dangers of fake news on messaging platforms:
+
+- [WhatsApp limits message forwarding to slow spread of coronavirus misinformation - Reuters](https://www.reuters.com/article/us-health-coronavirus-whatsapp/whatsapp-limits-message-forwarding-to-slow-spread-of-coronavirus-misinformation-idUSKBN21P0YZ)
+- [How WhatsApp Leads Mobs to Murder in India - NYT](https://www.nytimes.com/interactive/2018/07/18/technology/whatsapp-india-killings.html)
 
 It consists of an SMS responder that logs claims for fact checking and replies with information on it, and a dashboard for fact checkers to verify received claims and track the spread of messages through time and around the world.
-
-_EXAMPLES_
 
 ## Features
 
