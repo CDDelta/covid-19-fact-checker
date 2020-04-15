@@ -30,56 +30,62 @@ export const onMessageReceived = functions.https.onRequest(
 
     const twiml = new twilio.twiml.MessagingResponse();
 
-    const receivedMsg = payload.Body.trim();
+    if (payload.Body.trimLeft().startsWith('/')) {
+      const receivedMsg = payload.Body.trimLeft().replace('/', '').trimRight();
 
-    console.log('getting claim document...');
+      console.log('getting claim document...');
 
-    const claimId = crypto
-      .createHash('sha256')
-      .update(receivedMsg.toLowerCase().replace(/\W/g, ''))
-      .digest('hex');
-    const claimDoc = await firestore.doc(`claims/${claimId}`).get();
+      const claimId = crypto
+        .createHash('sha256')
+        .update(receivedMsg.toLowerCase().replace(/\W/g, ''))
+        .digest('hex');
+      const claimDoc = await firestore.doc(`claims/${claimId}`).get();
 
-    if (claimDoc.exists) {
-      console.log(`claim exists as ${claimId}.`);
+      if (claimDoc.exists) {
+        console.log(`claim exists as ${claimId}.`);
 
-      const claim = claimDoc.data() as Claim;
+        const claim = claimDoc.data() as Claim;
 
-      if (claim.factCheckerLinks.length)
+        if (claim.factCheckerLinks.length)
+          twiml.message(
+            `Here's what I found regarding this claim:${claim.factCheckerLinks.map(
+              (l) => '\n' + l,
+            )}`,
+          );
+        else
+          twiml.message(
+            `I have not fact checked this claim yet. Please check back later.`,
+          );
+      } else {
+        console.log(`claim does not exist, creating claim ${claimId}...`);
+
+        await firestore.doc(`claims/${claimId}`).create({
+          content: receivedMsg,
+          hitCount: 0,
+          truthfulness: Truthfulness.Unverified,
+          hitCountryCodes: [],
+          factCheckerLinks: [],
+          dateAdded: admin.firestore.FieldValue.serverTimestamp(),
+        } as Omit<Claim, 'dateAdded'>);
+
         twiml.message(
-          `Here's what I found regarding this claim:${claim.factCheckerLinks.map(
-            (l) => '\n' + l,
-          )}`,
+          `I have never seen this claim before, but I have logged it for fact checking.`,
         );
-      else
-        twiml.message(
-          `I have not fact checked this claim yet. Please check back later.`,
-        );
+      }
+
+      console.log('publishing claim hit message...');
+
+      const hitId = await pubSubClient.topic('claim-hits').publishJSON({
+        claimId,
+        fromCountryCode: payload.FromCountry ?? 'unknown',
+      } as ClaimHitPayload);
+
+      console.log(`published hit ${hitId} message.`);
     } else {
-      console.log(`claim does not exist, creating claim ${claimId}...`);
-
-      await firestore.doc(`claims/${claimId}`).create({
-        content: receivedMsg,
-        hitCount: 0,
-        truthfulness: Truthfulness.Unverified,
-        hitCountryCodes: [],
-        factCheckerLinks: [],
-        dateAdded: admin.firestore.FieldValue.serverTimestamp(),
-      } as Omit<Claim, 'dateAdded'>);
-
       twiml.message(
-        `I have never seen this claim before, but I have logged it for fact checking.`,
+        'To fact check a claim, start it with "/" and send it to me.',
       );
     }
-
-    console.log('publishing claim hit message...');
-
-    const hitId = await pubSubClient.topic('claim-hits').publishJSON({
-      claimId,
-      fromCountryCode: payload.FromCountry ?? 'unknown',
-    } as ClaimHitPayload);
-
-    console.log(`published hit ${hitId} message.`);
 
     response.writeHead(200, { 'Content-Type': 'text/xml' });
     response.end(twiml.toString());
