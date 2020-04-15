@@ -11,6 +11,8 @@ Here are some examples of the dangers of fake news on messaging platforms:
 
 It consists of an SMS responder that logs claims for fact-checking and replies with information on it, and a dashboard for fact checkers to verify received claims and track the spread of messages through time and around the world.
 
+Read more [here](https://dev.to/cddelta/fact-checking-sms-with-twilio-3dn2).
+
 ## Features
 
 - SMS Responder
