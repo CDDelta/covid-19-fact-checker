@@ -44,6 +44,7 @@ Every time the responder receives a claim, a cloud function is triggered with Pu
 - [Node.js](https://nodejs.org/)
 - A Firebase project with Firestore initialised - [create one](console.firebase.google.com/)
 - [Firebase CLI](https://firebase.google.com/docs/cli?hl=vi)
+- [Angular CLI](https://cli.angular.io/)
 - A Twilio account - [sign up](https://www.twilio.com/try-twilio)
 
 ### Local development
@@ -57,7 +58,7 @@ git clone https://github.com/CDDelta/covid-19-fact-checker.git
 cd covid-19-fact-checker
 ```
 
-2. Update your project id in `.firebaserc` and replace the Firebase SDK config in `/src/environments/environment.ts`.
+2. Update your project id in `.firebaserc` and replace the Firebase SDK config in `/src/environments/environment.ts` and `/src/environments/environment.prod.ts`.
 
 3. Install dependencies
 
@@ -104,22 +105,22 @@ all the config values we need to run the application:
 | Account&nbsp;Sid  | Your primary Twilio account identifier - find this [in the Console](https://www.twilio.com/console). |
 | Auth&nbsp;Token   | Used to authenticate - [just like the above, you'll find this here](https://www.twilio.com/console). |
 
-1. Build the dashboard
-
-```bash
-ng build --prod
-```
-
-2. Set config variables
+1. Set config variables
 
 ```bash
 firebase functions:config:set twillio.account_sid="ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" twillio.auth_token="your_auth_token"
 ```
 
-3. Deploy to Firebase
+2. Deploy the dashboard
 
 ```bash
-firebase deploy
+ng deploy
+```
+
+3. Deploy the backend
+
+```bash
+firebase deploy --only functions,firestore
 ```
 
 4. Point the Twillio Programmable SMS webhook to the `onMessageReceived` Firebase Function.
