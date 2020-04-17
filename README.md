@@ -74,9 +74,15 @@ npm install
 npm start
 ```
 
-5. Navigate to [http://localhost:4200](http://localhost:4200)
+5. Enable passwordless sign in in Firebase and add a user to allow sign in to the dashboard.
 
-6. Enable passwordless sign in in Firebase and add a user to allow sign in to the dashboard.
+6. Deploy the database and functions
+
+```bash
+firebase deploy
+```
+
+7. Navigate to [http://localhost:4200](http://localhost:4200)
 
 That's it!
 
